@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudOps | Command Center</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">✦</div>
+            <div>
+                <h2>Cloud<span>Ops</span></h2>
+                <small>COMMAND CENTER</small>
+            </div>
+        </div>
+
+        <p class="nav-label">WORKSPACE</p>
+
+        <nav>
+            <a href="#overview" class="nav-link active">◈ Dashboard</a>
+            <a href="#infrastructure" class="nav-link">▦ Infrastructure</a>
+            <a href="#deployment" class="nav-link">⇧ Deployments</a>
+            <a href="#commands" class="nav-link">⌘ Command Library</a>
+            <a href="#tasks" class="nav-link">☑ My Tasks</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="profile">
+                <div class="avatar">DE</div>
+                <div>
+                    <strong>DevOps Engineer</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="breadcrumb">WORKSPACE / OVERVIEW</p>
+                <h1>Dashboard Overview</h1>
+                <p class="subtitle">Monitor your infrastructure and deployments.</p>
+            </div>
+
+            <div class="top-actions">
+                <span class="live"><span></span> LIVE SYSTEM</span>
+                <div class="date">NOV 2026</div>
+            </div>
+        </header>
+
+
+        <!-- Welcome Banner -->
+        <section class="welcome" id="overview">
+            <div>
+                <p class="welcome-tag">YOUR CLOUD ENVIRONMENT</p>
+                <h2>Everything is running smoothly.</h2>
+                <p>Here's what's happening across your infrastructure today.</p>
+            </div>
+            <div class="welcome-art">☁</div>
+        </section>
+
+
+        <!-- Metrics -->
+        <section id="infrastructure">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Infrastructure Metrics</h2>
+                    <p>Real-time style sample metrics</p>
+                </div>
+                <span class="updated">● Sample Data</span>
+            </div>
+
+            <div class="cards">
+
+                <div class="metric-card blue">
+                    <div class="metric-top">
+                        <span>EC2 INSTANCES</span>
+                        <span class="metric-icon">▣</span>
+                    </div>
+                    <h2>12</h2>
+                    <p><span class="positive">↑ 2</span> from last week</p>
+                    <div class="mini-bar"><span style="width:80%"></span></div>
+                </div>
+
+                <div class="metric-card purple">
+                    <div class="metric-top">
+                        <span>CPU UTILIZATION</span>
+                        <span class="metric-icon">◉</span>
+                    </div>
+                    <h2>42%</h2>
+                    <p><span class="positive">Healthy</span> · Normal usage</p>
+                    <div class="mini-bar"><span style="width:42%"></span></div>
+                </div>
+
+                <div class="metric-card cyan">
+                    <div class="metric-top">
+                        <span>MEMORY USAGE</span>
+                        <span class="metric-icon">▤</span>
+                    </div>
+                    <h2>68%</h2>
+                    <p><span class="positive">Stable</span> · Within limits</p>
+                    <div class="mini-bar"><span style="width:68%"></span></div>
+                </div>
+
+                <div class="metric-card green">
+                    <div class="metric-top">
+                        <span>UPTIME</span>
+                        <span class="metric-icon">◷</span>
+                    </div>
+                    <h2>99.9%</h2>
+                    <p><span class="positive">Excellent</span> · Availability</p>
+                    <div class="mini-bar"><span style="width:99%"></span></div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Deployment -->
+        <section id="deployment">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Deployment Center</h2>
+                    <p>Application release management</p>
+                </div>
+            </div>
+
+            <div class="deployment-panel">
+
+                <div class="deploy-info">
+                    <div class="deploy-icon">⇧</div>
+                    <div>
+                        <h3>Production Environment</h3>
+                        <p>Application: cloudops-dashboard</p>
+                        <span class="environment">● PRODUCTION</span>
+                    </div>
+                </div>
+
+                <div class="deploy-action">
+                    <span id="deployment-status">● Ready to deploy</span>
+                    <button id="deploy-btn">Deploy Now ↗</button>
+                </div>
+
+            </div>
+
+            <p id="deployment-message">All systems ready for the next release.</p>
+
+        </section>
+
+
+        <!-- Activity and Commands -->
+        <div class="content-grid">
+
+            <section class="panel" id="commands">
+                <div class="section-heading">
+                    <div>
+                        <h2>Command Library</h2>
+                        <p>Frequently used commands</p>
+                    </div>
+                </div>
+
+                <div class="command-item">
+                    <div>
+                        <strong>Linux</strong>
+                        <small>Check disk space</small>
+                    </div>
+                    <code>df -h</code>
+                </div>
+
+                <div class="command-item">
+                    <div>
+                        <strong>Git</strong>
+                        <small>Check repository status</small>
+                    </div>
+                    <code>git status</code>
+                </div>
+
+                <div class="command-item">
+                    <div>
+                        <strong>Docker</strong>
+                        <small>List running containers</small>
+                    </div>
+                    <code>docker ps</code>
+                </div>
+
+                <div class="command-item">
+                    <div>
+                        <strong>Kubernetes</strong>
+                        <small>List pods</small>
+                    </div>
+                    <code>kubectl get pods</code>
+                </div>
+
+            </section>
+
+
+            <section class="panel activity-panel">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Recent Activity</h2>
+                        <p>Latest workspace events</p>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <span class="activity-dot green-dot"></span>
+                    <div>
+                        <strong>Deployment successful</strong>
+                        <small>Production · 10 minutes ago</small>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <span class="activity-dot blue-dot"></span>
+                    <div>
+                        <strong>Git repository updated</strong>
+                        <small>Main branch · 25 minutes ago</small>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <span class="activity-dot purple-dot"></span>
+                    <div>
+                        <strong>Infrastructure check</strong>
+                        <small>All services healthy · 1 hour ago</small>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <span class="activity-dot cyan-dot"></span>
+                    <div>
+                        <strong>Monitoring completed</strong>
+                        <small>CPU and memory · 2 hours ago</small>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- Tasks -->
+        <section id="tasks" class="panel tasks-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>My Daily Tasks</h2>
+                    <p>Track your DevOps activities</p>
+                </div>
+
+                <span id="task-count">0 / 4 completed</span>
+            </div>
+
+            <div class="task-list">
+
+                <label class="task">
+                    <input type="checkbox">
+                    <span>Review server logs</span>
+                </label>
+
+                <label class="task">
+                    <input type="checkbox">
+                    <span>Check infrastructure health</span>
+                </label>
+
+                <label class="task">
+                    <input type="checkbox">
+                    <span>Verify CI/CD pipeline</span>
+                </label>
+
+                <label class="task">
+                    <input type="checkbox">
+                    <span>Review deployment status</span>
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            CloudOps Command Center <span>•</span> Built with HTML, CSS & JavaScript
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
