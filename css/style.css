@@ -671,3 +671,12 @@ footer span {
         font-size: 22px;
     }
 }
+
+.maintenance-notice {
+    background: #78350f;
+    color: #fde68a;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    width: 10%;
+}
