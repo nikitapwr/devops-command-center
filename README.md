@@ -1,4 +1,4 @@
-# DevOps Command Center - Developer Update
+# DevOps Command Center - Main Update
 
 A mini interactive dashboard built using HTML, CSS and JavaScript.
 
