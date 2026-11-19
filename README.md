@@ -21,4 +21,3 @@ This project was created to practise Git and GitHub workflows as part of my Clou
 
 ## How to Run
 Open index.html in any modern web browser.
-Temporary deployment note
